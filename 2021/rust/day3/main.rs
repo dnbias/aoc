@@ -1,8 +1,8 @@
-mod ex1;
+mod diagnostic;
+use diagnostic::calculate_diagnostic;
 
 fn main() {
-    let (hor,depth) = ex1::get_final_position("input").unwrap();
-    let res = hor * depth;
-    println!("Pos: {}\nDepth: {}", res, depth);
-    println!("Result: {}", res);
+    let (gamma,epsilon) = calculate_diagnostic("input").unwrap();
+    let power_consumption = gamma * epsilon;
+    println!("Power Consumption: {}", power_consumption);
 }
