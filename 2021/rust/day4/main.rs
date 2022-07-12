@@ -1,3 +1,7 @@
+#![allow(dead_code)]
+mod bingo;
+
 fn main() {
-    println!("Hello, world!");
+    let score = bingo::play("input").unwrap();
+    println!("{}", score);
 }
