@@ -3,5 +3,5 @@ mod bingo;
 
 fn main() {
     let score = bingo::play("input").unwrap();
-    println!("{}", score);
+    println!("{score}");
 }
